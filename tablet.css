@@ -1,0 +1,19 @@
+.pokedex-half{
+    width: 49%;
+}
+
+.circle--big{
+    width: 80px;
+    height: 80px;
+}
+
+.circle--big > div{
+    width: 100%;
+    height: 70%;
+    background-color: aqua;
+    border-radius: 100%;
+}
+
+.stats{
+    width: 95%;
+}

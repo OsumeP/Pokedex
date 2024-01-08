@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 425px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
+    <title>Pokedex</title>
+</head>
+<body>
+    <main>
+        <div class="pokedex-half">    
+            <section class="pokedex-header">
+                <div class="circle circle--big">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle circle--red"></div>
+                <div class="circle circle--yellow"></div>
+                <div class="circle circle--green"></div>
+            </section>
+            <div class="control-content">
+                <section class="image-container">
+                    <div class="poke-img" id="img-div">
+                        <img src="" id="img-pokemon" class="pokemon-img" alt="">
+                    </div>
+                </section>
+                <section class="details-container">
+                    <div class="circle circle--details"></div>
+                    <div class="small-rectangle small-rectangle--orange"></div>
+                    <div class="small-rectangle small-rectangle--green"></div>
+                    <form action="" class="big-rectangle">
+                        <input type="text" placeholder="pikachu" class="big-rectangle__input" id="input-pokemon">
+                        <button class="big-rectangle__button" onclick="BuscarPokemon()">Search</button>
+                    </form>
+                    <section class="pad">
+                        <div class="direction-pad direction-pad--up"></div>
+                        <div class="direction-pad direction-pad--left" id="left"></div>
+                        <div class="direction-pad direction-pad--right" id="right"></div>
+                        <div class="direction-pad direction-pad--down"></div>
+                        <div class="direction-pad direction-pad--middle"></div>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <div class="pokedex-half pokedex-half--second">
+            <section class="stats" id="stats">
+                <div class="stats-graphic" id="stat-div"></div>
+                <p class="text-stats text-stats--speed">Speed</p>
+                <p class="text-stats text-stats--sd">Special Defense</p>
+                <p class="text-stats text-stats--sa">Special Attack</p>
+                <p class="text-stats text-stats--attack">Attack</p>
+                <p class="text-stats text-stats--hp">HP</p>
+            </section>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
